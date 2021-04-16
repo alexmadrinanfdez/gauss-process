@@ -2,7 +2,7 @@ eps <- sqrt(.Machine$double.eps) # define small number
 
 # point-wise covariance function
 exp.cov <- function(x, xp) {
-  exp(-50 * (x - xp)^2)
+  exp(-(x - xp)^2)
 }
 
 # covariance matrix
